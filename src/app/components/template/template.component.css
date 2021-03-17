@@ -1,0 +1,9 @@
+.component {
+  width: 85%;
+  margin: 0 auto;
+  /* justify-content: center; */
+}
+
+.side {
+  width: 12%;
+}

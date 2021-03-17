@@ -1,0 +1,34 @@
+<div class="container_login">
+  <div class="card p-5 form-container">
+    <h2 class="title mb-3">CRUD Angular</h2>
+    <form [formGroup]="form" (submit)="login()">
+      <label for="email" className="title">
+        Email
+        <input
+          class="form-control input mb-2 col-12"
+          name="email"
+          formControlName="email"
+          v-model="email"
+          type="email"
+          required
+          placeholder="digite o email cadastrado"
+        />
+      </label>
+      <label for="senha" class="title">
+        Senha
+        <input
+          class="form-control input"
+          v-model="password"
+          type="password"
+          name="senha"
+          formControlName="password"
+          placeholder="digite sua senha"
+        />
+      </label>
+
+      <button type="submit" class="btn btn-info float-right mt-3">
+        Entrar
+      </button>
+    </form>
+  </div>
+</div>

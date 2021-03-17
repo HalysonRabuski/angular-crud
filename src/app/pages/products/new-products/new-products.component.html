@@ -1,0 +1,34 @@
+<h4 class="mt-4 title">Novo Produto</h4>
+<p class="ml-3 subtitle">Tela de cadastro de produtos</p>
+<div class="card p-5 form-container">
+  <form [formGroup]="form" (submit)="handleSubmit()">
+    <div>
+      <label for="email" className="title"> </label>
+      Nome
+      <input
+        class="form-control input mb-2 col-12"
+        name="name"
+        formControlName="name"
+        type="email"
+        required
+        placeholder="digite o email cadastrado"
+      />
+      <!-- </label> -->
+    </div>
+    <div>
+      <label for="senha" class="title"></label>
+      Descricao
+      <input
+        class="form-control input"
+        type="text"
+        name="description"
+        formControlName="description"
+        placeholder="digite a descrição do produto a ser cadastrado"
+      />
+    </div>
+    <a [routerLink]="['/produtos']" class="btn btn-secondary mt-3"> Voltar </a>
+    <button type="submit" class="btn btn-success float-right mt-3">
+      Cadastrar
+    </button>
+  </form>
+</div>
